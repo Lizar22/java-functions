@@ -10,3 +10,17 @@
 //Ejecuta el método greetingCoder 
 
 //¿Sabes donde definir el método y en dónde lo has de ejecutar? Si no lo sabes vuelve al archivo de Resources.md
+
+public class Welcome {
+    static void greeting() {
+        System.out.println("¡Hola FemCoder!");
+    }
+    static void greetingCoder() {
+        String coder = "Lara";
+        System.out.println("¡Hola " + coder + "!");
+    }
+    public static void main(String[] args) {
+        greeting();
+        greetingCoder();
+    }
+}
