@@ -9,10 +9,9 @@ public class DocComments {
         greetingCoder("Alex", 155, 44.50);
         double bmi = calculateBodyMassIndex(1.55, 44.50);
         System.out.println(bmi);
-
-        //Ejecuta el nuevo método 
+        //Ejecuta el nuevo método
+        System.out.println(result(bmi));
     }
-
     /**
      * Function name: greeting
      * 
@@ -58,15 +57,42 @@ public class DocComments {
     //Escribe una función que con el índice de masa corporal devuelva un String con los resultados y documéntala:
     
     /* Clasificación índice de masa corportal rango - kg/m2
-    Delgadez severa	< 16
-    Delgadez moderada	16 - 17
-    Delgadez leve	17 - 18.5
-    Normal	18.5 - 25
-    Sobrepeso	25 - 30
-    Obeso Clase I	30 - 35
-    Obeso Clase II	35 - 40
-    Obeso Clase III	> 40 */
+    Rango 1	< 16
+    Rango 2	16 - 17
+    Rango 3	17 - 18.5
+    Rango 4	18.5 - 25
+    Rango 5	25 - 30
+    Rango 6	30 - 35
+    Rango 7	35 - 40
+    Rango 8	> 40 */
 
-
-
+    /**
+     *  Function name: result
+     *
+     * @param bmi (double)
+     * @return (double)
+     *
+     * Inside the function:
+     * 1. Classify BMI according to the ranges established from 1 to 8
+     * 2. Returns a message with the corresponding range
+     */
+    public static String result(double bmi) {
+        if (bmi < 16) {
+            return "Rango 1";
+        } else if (bmi >= 16 && bmi <= 17) {
+            return "Rango 2";
+        } else if (bmi <= 18.5) {
+            return "Rango 3";
+        } else if (bmi <=25) {
+            return "Rango 4";
+        } else if (bmi <= 30) {
+            return "Rango 5";
+        } else if (bmi <= 35) {
+            return "Rango 6";
+        } else if (bmi <= 40) {
+            return "Rango 7";
+        } else {
+            return "Rango 8";
+        }
+    }
 }
