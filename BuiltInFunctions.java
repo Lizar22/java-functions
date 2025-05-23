@@ -1,6 +1,6 @@
 public class BuiltInFunctions {
     public static void main(String[] args) {
-
+        printMessage("¡Aprendiendo a crear funciones!");
         //Ejecuta aquí todos los métodos creados e imprime en la terminal. 
 
     }
@@ -15,7 +15,10 @@ public class BuiltInFunctions {
          */
 
         // Escribe tu código aquí
-        
+        public static void printMessage(String message) {
+            System.out.println(message);
+            System.out.println(getLength("Esta me ha costado un poquito más"));
+        }
 
         /**
          * Function name: getLength
@@ -28,7 +31,9 @@ public class BuiltInFunctions {
          */
 
         // Escribe tu código aquí
-
+        public static int getLength(String message) {
+            return message.length();
+        }
 
         /**
          * Function name: convertToLowercase
