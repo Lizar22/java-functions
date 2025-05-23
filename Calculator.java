@@ -1,8 +1,10 @@
 public class Calculator {
     public static void main(String[] args) {
         System.out.println(add(2, 5));
+        System.out.println(sustract(4,2));
+        System.out.println(multiply(5,2));
+        System.out.println(divide(6,2));
     }
-
     //Ejecuta aquí todos los métodos creados e imprime en la terminal.
 
 
@@ -33,7 +35,10 @@ public class Calculator {
  * Inside the function:
  * 1. subtract 2 numbers
  */
-
+    public static double sustract(double number1, double number2) {
+        double substracts = number1 - number2;
+        return substracts;
+    }
 
 /**
  * Function name: multiply
@@ -45,8 +50,10 @@ public class Calculator {
  * Inside the function:
  * 1. multiply 2 numbers
  */
-
-
+    public static double multiply(double number1, double number2) {
+        double multiplication = number1 * number2;
+        return multiplication;
+    }
 
 /**
  * Function name: divide
@@ -58,6 +65,8 @@ public class Calculator {
  * Inside the function:
  * 1. divide 2 numbers
  */
-
-
+    public static double divide(double number1, double number2) {
+        double division = number1 / number2;
+        return division;
+    }
 }
